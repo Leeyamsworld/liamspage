@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* The container wrapping all 5 cards into a unified row */
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centers the whole row on the page */
+  align-items: center;
+  gap: 20px;               /* Clean spacing gaps between each card */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Optional: allows cards to wrap to a new line on small mobile screens */
+  flex-wrap: wrap; 
+}
+
+/* Your updated square card component */
+.card {
+  /* Keeps the card square, scaling dynamically up to a limit */
+  width: 100%;
+  max-width: 200px; 
+  aspect-ratio: 1 / 1; 
+  
+  border-radius: 16px; 
+  background-color: #0000ff; 
+  color: #ffffff;            
+  padding: 20px;
+  box-sizing: border-box;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #3333ff; 
+  transform: translateY(-4px); 
+}
+
+.card h3, 
+.card p {
+  color: #ffffff;
+  margin: 4px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+</style>
+</head>
+<body>
+<div style="text-align: center; height: 25vh; width: 100vw;">
+<h1>
+Liam's Page
+</h1>
+</div>
+
+<div class="card-row">
+<a href="https://leeyamsworldweb.pages.dev/"><div class="card">Leeyamsworld - The World of Liam Galeon</div></a>
+<a href="https://youtube.com/"><div class="card">YouTube</div></a>
+<a href="https://facebook.com/"><div class="card">Facebook</div></a>
+<a href="https://scratch.mit.edu/"><div class="card">Scratch</div></a>
+<a href="https://google.com/"><div class="card">Google</div></a>
+</div>
+<script async src="https://cse.google.com/cse.js?cx=d27a311d62f304532">
+</script>
+<div class="gcse-search"></div>
+</body>
+</html>
